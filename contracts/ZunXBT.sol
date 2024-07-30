@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ZunXBT is ERC721, Ownable {
-    constructor(address initialOwner) ERC721("POND NFT", "POND") Ownable(initialOwner) {}
+    constructor(address initialOwner) ERC721("NEYO", "NEY") Ownable(initialOwner) {}
 
     function safeMint(address to, uint256 tokenId) public onlyOwner {
         _safeMint(to, tokenId);
